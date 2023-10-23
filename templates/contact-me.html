@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Contact Me
+{% endblock %}
+
+{% block main %}
+  <h1>Let's connect</h1>
+
+  <p>See the source code and send suggestions in the <a href="" target="_blank" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Project Repository</a></p>
+
+  <p>My Social Networks 👇</p>
+  <section class="social-networks">
+
+    <div class="logos">
+      <div>
+        <img
+          src="data:image/png;base64,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"
+          alt="GitHub logo"
+          class="img-fluid"
+        />
+      </div>
+      <a
+        href="https://github.com/edulustosa"
+        target="_blank"
+        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+        >/edulustosa</a
+      >
+    </div>
+
+    <div class="logos">
+      <div>
+        <img
+          src="https://cdn.iconscout.com/icon/free/png-256/free-linkedin-192-739517.png"
+          alt="Linkedin logo"
+          class="img-fluid"
+        />
+      </div>
+      <a
+        href="https://www.linkedin.com/in/eduardolustosa/"
+        class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+        >/eduardolustosa</a
+      >
+    </div>
+  </section>
+{% endblock %}

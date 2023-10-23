@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Chat
+{% endblock %}
+
+{% block main %}
+  <div class="chat-container container-sm  border">
+    <div class="chat-messages">
+      <ul class="messages list-group">
+        {% for message in messages %}
+          {% if message[0] == session["username"] %}
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto send">
+                <div class="fw-bold">You</div>
+                <p>
+                  {{ message[1] }}
+                </p>
+              </div>
+            </li>
+          {% else %}
+            <li class="list-group-item d-flex justify-content-end align-items-start">
+              <div class="ms-2 me-auto text-end received">
+                <div class="fw-bold">{{ message[0] }}</div>
+                <p>
+                  {{ message[1] }}
+                </p>
+              </div>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="chat-input input-group mb-3">
+      <input type="text" autocomplete="off" autofocus id="message-input" class="form-control" name="message" placeholder="Message">
+      <button class="btn-send-message btn btn-primary">
+        <span class="material-symbols-outlined">send</span>
+      </button>
+    </div>
+  </div>
+{% endblock %}
+
+{% block script %}
+  <script>var username = "{{ username }}"</script>
+  <script src="{{ url_for('static', filename='js/socket.js') }}"></script>
+{% endblock %}
