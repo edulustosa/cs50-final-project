@@ -192,6 +192,7 @@ def handle_new_message(message):
 
 
 @app.route("/contact_me")
+@login_required
 def contact_me():
     return render_template("contact-me.html")
 
