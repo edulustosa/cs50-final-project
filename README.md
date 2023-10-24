@@ -2,11 +2,11 @@
 
 #### Video demo: <https://youtu.be/yS5OEGl-2zA>
 
-Hello, my name is Eduardo Lustosa from Brazil, and this is my CS50 final project. I'm presenting to you a real-time chat application that allows users to chat with each other in a global chat environment. To make this possible, I utilized a technology called WebSockets, enabling real-time data exchange between a client and a web server.
+Hello, my name is Eduardo Lustosa from Brazil, and this is my CS50 final project.
 
 ## Overview
 
-This project is a real-time chat application that enables users to have conversations in a global chat room. I used technologies such as Flask and Flask-SocketIO on the server side and Socket.IO on the client side to make this possible.
+This project is a real-time chat application that enables users to have conversations in a global chat room. To make this possible, I utilized a technology called WebSockets, enabling real-time data exchange between a client and a web server. I used technologies such as Flask and Flask-SocketIO on the server side and Socket.IO on the client side to make this possible.
 
 ## Key Features
 
