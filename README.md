@@ -1,4 +1,4 @@
-# Group Chat
+# Duck chat
 
 #### Video demo: <https://youtu.be/yS5OEGl-2zA>
 
